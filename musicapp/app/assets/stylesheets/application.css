@@ -1,0 +1,95 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+* {
+    background-color: #02ca9b;
+    display: block;
+}
+
+ h1 {
+  font-size: 60px;
+  color: yellow;
+  text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    color: aqua;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body {
+    border-style: solid;
+    border-radius: 40px;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+
+}
+
+label {
+    color: yellow;
+    text-align: center;
+}
+
+input {
+    background-color: white;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    row-gap: 0px;
+    justify-content: flex-end;
+
+}
+
+input[type=submit] {
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-radius: 10px;
+    border-color: #0066A2;
+    height: 50px;
+    width: 100px;
+    font: bold15px arial,sans-serif;
+    text-shadow: none;
+}
+
+body > header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  a {
+    margin: 3px;
+  }
+

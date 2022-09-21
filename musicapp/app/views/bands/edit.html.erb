@@ -1,0 +1,16 @@
+<h2>Edit Band</h2>
+
+<form action = "<%= band_url(@band)%>" method = "post">
+    <input type = "hidden" name = "_method" value = "PATCH">
+    <input
+    type="hidden"
+    name="authenticity_token"
+    value="<%= form_authenticity_token %>"
+    >
+
+    <label>Name:
+    <input type ="string" name = "band[name]" value = "<%=@band.name %>">
+    </label>
+
+    <input type = "submit" value = "Submit">
+</form>
